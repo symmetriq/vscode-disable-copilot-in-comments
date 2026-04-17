@@ -1,0 +1,37 @@
+{
+  "name": "disable-copilot-in-comments",
+  "displayName": "Disable Copilot in Comments",
+  "description": "Automatically disables GitHub Copilot inline completions when your cursor is inside a comment line or block.",
+  "version": "0.1.0",
+  "publisher": "Symmetriq",
+  "license": "CC0-1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/symmetriq/vscode-disable-copilot-in-comments"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "extensionKind": [
+    "workspace"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Disable Copilot in Comments",
+      "properties": {
+        "disableCopilotInComments.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable or disable the automatic toggling of GitHub Copilot completions in comments."
+        }
+      }
+    }
+  }
+}
