@@ -120,6 +120,7 @@ function isInLineComment(textBeforeCursor, lineMarker, blockSyntax) {
     if (prev === '\\') continue
 
     // Track string state
+    if (ch === "'" && !inDoubleQuote && !inTemplateString) {
       inSingleQuote = !inSingleQuote
       continue
     }

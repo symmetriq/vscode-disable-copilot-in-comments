@@ -2,7 +2,7 @@
   "name": "disable-copilot-in-comments",
   "displayName": "Disable Copilot in Comments",
   "description": "Automatically disables GitHub Copilot inline completions when your cursor is inside a comment line or block.",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "publisher": "Symmetriq",
   "license": "CC0-1.0",
   "repository": {
@@ -17,9 +17,6 @@
   ],
   "activationEvents": [
     "onStartupFinished"
-  ],
-  "extensionKind": [
-    "workspace"
   ],
   "main": "./src/extension.js",
   "contributes": {
